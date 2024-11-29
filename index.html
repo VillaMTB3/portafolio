@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('5FGNbmgYtzMrB5bNa')
+    </script>
+
+</head>
+
+<body>
+    <header id="1">
+        <div class="contenedor-m">
+            <div class="cajaLuna">
+                <label for="toggle" id="label_toggle"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z" />
+                    </svg></label>
+                <input type="checkbox" id="toggle">
+            </div>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="acercaDe.html">Acerca de</a>
+                <a href="portafolio.html">Portafolio</a>
+                <a href="#4">Contacto</a>
+            </nav>
+            <div class="contenido-header">
+                <h1 class="titulo-header">Juan David</h1>
+                <span class="linea-header"></span>
+                <h2 class="texto-header">Si quieres saber más sobre mí te invito a navegar en está web</span></h2>
+                <a href="" class="action-header">llamame</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="2" class="quienes">
+            <div class="contenedor">
+                <h3 class="quienes-titulo">Simple & puro diseño</h3>
+                <p class="quienes-parrafo">En esta web vas a conocer toda mi trayectoria mis conocimientos en distitos
+                    lenguajes y mi gran variedad de proyectos</p>
+            </div>
+        </section>
+        <section class="portafolio" id="particle-js">
+            <div class="contenedor" >
+                <div class="portafolio-textos">
+                    <h2>Haz de tu trabajo algo extraordinario</h2>
+                    <p>Contactame si estas preparado</p>
+                </div>
+                <section class="galeria">
+                    <div class="fotos">
+                        <img src="img/1.jpeg" alt="">
+                        <p>Proyecto 1</p>
+                    </div>
+                    <div class="fotos">
+                        <img src="img/2.jpeg" alt="">
+                        <p>Proyecto 1</p>
+                    </div>
+                    <div class="fotos">
+                        <img src="img/3.jpeg" alt="">
+                        <p>Proyecto 1</p>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="4" class="contacto">
+            <div class="contenedor">
+                <div class="footer-textos">
+                    <h2>Contacta conmigo</h2>
+                    <p>completa el formulario si quieres que te ayude!</p>
+                </div>
+                <form id="form" class="formulario">
+                    <input type="text" name="from_name" id="from_name" placeholder="Nombre:" required value="">
+                    <input type="email" name="email_id" id="email_id" placeholder="Correo:" required value="">
+                    <textarea type="text" name="message" id="message" placeholder="Mensaje:"></textarea>
+                    <div class="derecha">
+                        <input class="boton derecha" type="submit" id="button" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </footer>
+    <script src="/particles.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+        particlesJS('particle-js',
+            {
+  "particles": {
+    "number": {
+      "value": 70,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#070606"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.3866823443998136,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}
+        )
+    </script>
+</body>
+
+</html>
